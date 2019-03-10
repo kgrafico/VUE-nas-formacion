@@ -24,7 +24,7 @@ export default {
   h1, h2 {
     padding: 5px;
     width: 100%;
-    margin: 10px auto;
+    margin: 20px auto;
     max-width: 230px;
     border: 5px solid #9DB6EC;
     color: #9DB6EC;

@@ -1,6 +1,10 @@
 <template>
-  <div class="hello">
-    <h4>{{ msg }}</h4>
+  <div class="pojects">
+    <img class="imgProject" src="/static/img/img-ciudad.jpg">
+    <div class="textContent">
+      <h4>{{ title }}</h4>
+      <p>{{ text }}</p>
+    </div>
   </div>
 </template>
 
@@ -9,7 +13,8 @@ export default {
   name: 'ListProjects',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      title: 'Título',
+      text: 'Esto es el texto para un proyecto'
     }
   }
 }
@@ -17,15 +22,23 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  .imgProject {
+    width: 100%;
+  }
+
+  /* borrar */
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  a {
+    color: #42b983;
+  }
 </style>
