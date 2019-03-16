@@ -2,7 +2,7 @@
   <section class="home">
     <div class="border"></div>
     <h1>{{ logo }}</h1>
-    <input type="text" v-model="inputText" placeholder="search...">
+    <input class="search" type="text" v-model="inputText" placeholder="search...">
     <div v-if="showProjects">
       <project
         v-for="(project, index) of filteredProjects"
