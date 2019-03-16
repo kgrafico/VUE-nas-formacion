@@ -1,5 +1,4 @@
 <template lang="html">
-
   <section class="project">
     <div class="image"></div>
     <div class="textContent">
@@ -21,20 +20,17 @@
   export default {
     name: 'project',
     props: [],
-    mounted() {
-
+    mounted () {
     },
-    data() {
+    data () {
       return {
         title: 'Título',
         text: 'Esto es el texto para un proyecto'
       }
     },
     methods: {
-
     },
     computed: {
-
     }
   }
 </script>
