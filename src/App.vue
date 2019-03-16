@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-  <ul>
-    <li>
-      <router-link to="/">Home</router-link>
-    </li>
-    <li>
-      <router-link to="/projects">Go to projects</router-link>
-    </li>
-  </ul>
     <router-view />
+    <div class="menuRoutes">
+      <div class="buttonStyle">
+        <router-link to="/">Home</router-link>
+      </div>
+      <div class="buttonStyle">
+        <router-link to="/projects">Go to projects</router-link>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -25,4 +25,36 @@
   }
 </script>
 <style lang="scss">
+  .menuRoutes{
+    position:fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    .buttonStyle {
+      width: 50%;
+      justify-content: center;
+      display: flex;
+      background-color: #e2e1e1;
+      font-weight: 200;
+      &:hover {
+        background-color: #9DB6EC;
+      }
+      a {
+        padding: 20px;
+        text-decoration:none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &:visited {
+          color: black;
+        }
+        &:hover {
+          background-color: #9DB6EC;
+        }
+        &:active {
+          background-color: #9DB6EC;
+        }
+      }
+    }
+  }
 </style>
