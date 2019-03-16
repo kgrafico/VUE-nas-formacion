@@ -10,9 +10,9 @@
 </template>
 
 <script>
-  import project from '@/components/view-parts/project'
+  import project from '@/components/project'
   export default {
-    name: 'home',
+    name: 'projects',
     components: {
       'project': project
     },
@@ -35,6 +35,6 @@
   }
 
 </script>
-<style src="./home.scss" scoped lang="scss">
+<style src="./projects.scss" scoped lang="scss">
 </style>
 
