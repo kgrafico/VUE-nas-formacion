@@ -4,13 +4,15 @@
     <div class="image"></div>
     <div class="textContent">
       <div class="header-box">
-        <h4 class="title">{{ title }}</h4>
+        <h4 v-if="!editing" class="title">{{ title }}</h4>
+        <input v-if="editing" v-model="title" class="title">
         <div class="btns">
-          <span> <i class="fas fa-times"></i></span>
-          <span> <i class="fas fa-pencil-alt"></i></span>
+          <span @click="onRemove"> <i class="fas fa-times"></i></span>
+          <span @click="edit"> <i class="fas fa-pencil-alt"></i></span>
         </div>
       </div>
-      <p class="text">{{ text }}</p>
+      <p v-if="!editing" class="text">{{ text }}</p>
+      <input v-if="editing" v-model="text" class="text">
     </div>
   </section>
 
@@ -20,16 +22,21 @@
   import './project.scss'
   export default {
     name: 'project',
-    props: [],
+    props: ['title', 'text', 'id'],
     mounted () {
     },
     data () {
       return {
-        title: 'Título',
-        text: 'Esto es el texto para un proyecto'
+        editing: false
       }
     },
     methods: {
+      onRemove (event) {
+        this.$emit('remove', this.id)
+      },
+      edit: function() {
+          this.editing = !this.editing;
+      }
     },
     computed: {
     }
