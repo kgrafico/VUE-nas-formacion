@@ -6,7 +6,7 @@
         <router-link to="/">Home</router-link>
       </div>
       <div class="buttonStyle">
-        <router-link to="/projects">Go to projects</router-link>
+        <router-link to="/projects">Projects</router-link>
       </div>
     </div>
   </div>

@@ -16,6 +16,8 @@
     justify-content: center;
     height: 100%;
     span {
+      display: flex;
+      align-items: center;
       color: #9DB6EC;
       font-weight: 800;
       font-size: 1.5em;
