@@ -5,6 +5,7 @@
 </template>
 
 <script>
+// import scss
   export default {
     name: 'App',
     data() {
