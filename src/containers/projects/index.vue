@@ -10,11 +10,9 @@
         v-bind:title="project.title"
         v-bind:text="project.text"
         v-bind:id="project.id"
-        @remove="remove"
       />
     </div>
     <div v-if="!showProjects">No projects found</div>
-    <button @click="add" class="addNewProject">Añadir proyecto</button>
   </section>
 </template>
 
@@ -53,19 +51,6 @@ export default {
     }
   },
   methods: {
-    remove: function(id) {
-      this.projects = this.projects.filter(p => p.id != id);
-    },
-    add: function() {
-      const id = this.projects.length + 1;
-      this.projects.push({
-        id: id,
-        title: `PROYECTO ${id}`,
-        text: `Descripción ${id}`
-      });
-      this.inputText = "";
-    },
-
   }
 };
 </script>

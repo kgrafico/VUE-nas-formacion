@@ -6,7 +6,7 @@
       <div class="header-box">
         <h4 class="title">{{ title }}</h4>
         <div class="btns">
-          <span @click="onRemove"> <i class="fas fa-times"></i></span>
+          <span> <i class="fas fa-times"></i></span>
           <span> <i class="fas fa-pencil-alt"></i></span>
         </div>
       </div>
@@ -28,9 +28,6 @@
       }
     },
     methods: {
-      onRemove (event) {
-        this.$emit('remove', this.id)
-      }
     },
     computed: {
     }
