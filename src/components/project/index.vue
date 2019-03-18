@@ -4,15 +4,13 @@
     <div class="image"></div>
     <div class="textContent">
       <div class="header-box">
-        <h4 v-if="!editing" class="title">{{ title }}</h4>
-        <input v-if="editing" v-model="title" class="title">
+        <h4 class="title">{{ title }}</h4>
         <div class="btns">
           <span @click="onRemove"> <i class="fas fa-times"></i></span>
-          <span @click="edit"> <i class="fas fa-pencil-alt"></i></span>
+          <span> <i class="fas fa-pencil-alt"></i></span>
         </div>
       </div>
-      <p v-if="!editing" class="text">{{ text }}</p>
-      <input v-if="editing" v-model="text" class="text">
+      <p class="text">{{ text }}</p>
     </div>
   </section>
 
@@ -27,15 +25,11 @@
     },
     data () {
       return {
-        editing: false
       }
     },
     methods: {
       onRemove (event) {
         this.$emit('remove', this.id)
-      },
-      edit: function() {
-          this.editing = !this.editing;
       }
     },
     computed: {
