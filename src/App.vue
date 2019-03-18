@@ -1,19 +1,11 @@
 <template>
   <div id="app">
-    <router-view />
-    <div class="menuRoutes">
-      <div class="buttonStyle">
-        <router-link to="/">Home</router-link>
-      </div>
-      <div class="buttonStyle">
-        <router-link to="/projects">Projects</router-link>
-      </div>
-    </div>
+    <projects />
   </div>
 </template>
 
 <script>
-// import scss
+import projects from './containers/projects'
   export default {
     name: 'App',
     data() {
@@ -21,6 +13,9 @@
         logo: 'Type something',
         add: 'Añadir nuevo'
       }
+    },
+    components: {
+      'projects': projects
     }
   }
 </script>
