@@ -4,25 +4,48 @@
     <h1>{{ logo }}</h1>
     <input class="search" type="text" v-model="inputText" placeholder="search...">
     <div v-if="showProjects">
-      <project
-        v-for="(project, index) of filteredProjects"
-        :key="index"
-        v-bind:title="project.title"
-        v-bind:text="project.text"
-        v-bind:id="project.id"
-      />
+      <section class="project">
+        <div class="image"></div>
+        <div class="textContent">
+          <div class="header-box">
+            <h4 class="title">{{ projects[0].title }}</h4>
+            <div class="btns">
+              <span>
+                <i class="fas fa-times"></i>
+              </span>
+              <span>
+                <i class="fas fa-pencil-alt"></i>
+              </span>
+            </div>
+          </div>
+          <p class="text">{{ projects[0].text }}</p>
+        </div>
+      </section>
+      <section class="project">
+        <div class="image"></div>
+        <div class="textContent">
+          <div class="header-box">
+            <h4 class="title">{{ projects[1].title }}</h4>
+            <div class="btns">
+              <span>
+                <i class="fas fa-times"></i>
+              </span>
+              <span>
+                <i class="fas fa-pencil-alt"></i>
+              </span>
+            </div>
+          </div>
+          <p class="text">{{ projects[1].text }}</p>
+        </div>
+      </section>
     </div>
     <div v-if="!showProjects">No projects found</div>
   </section>
 </template>
 
 <script>
-import project from "@/components/project";
 export default {
   name: "projects",
-  components: {
-    project: project
-  },
   props: [],
   data: () => ({
     projects: [
@@ -50,8 +73,7 @@ export default {
       return this.filteredProjects.length !== 0;
     }
   },
-  methods: {
-  }
+  methods: {}
 };
 </script>
 <style src="./projects.scss" scoped lang="scss">
