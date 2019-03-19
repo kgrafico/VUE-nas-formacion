@@ -41,5 +41,14 @@
     .text {
       margin: 0;
     }
+    .inputStyle {
+      background-color: #ebebef;
+      border: 0;
+      border-radius: 20px;
+      &:focus {
+        outline: none;
+        background-color: #ebebef;
+      }
+    }
   }
 }
