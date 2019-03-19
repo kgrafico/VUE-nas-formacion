@@ -194,12 +194,65 @@ También podemos hacer uso de la sintaxis que propone Vue para evitarnos escribi
 
 ## Step 3
 
-``` javascript
-  
+Vamos ahora a hacer uso de métodos, para poder añadir proyectos y eliminar proyectos. Tenemos ahora dos componentes, el padre (la lista) y el hijo (cada proyecto). La forma de comunicar componentes se debe hacer diferente en cada sentido. Del padre hacia el hijo, hemos visto cómo pasar datos, con las **props** y el **v-bind**. o **:**. Del hijo al padre nos comunicaremos mediante eventos, con la directiva **v-on** o con su otra sintaxis **@**, seguida del nombre del evento.
 
+Empezamos creando un botón en el componente padre que ejecuta un método cuando se hace click:
+
+```html
+<button @click="add" class="addNewProject">Añadir proyecto</button>
+```
+Y añadimos el método *add*
+``` javascript
+methods: {
+  add: function() {
+    const id = this.projects.length + 1;
+    this.projects.push({
+      id: id,
+      title: `PROYECTO ${id}`,
+      text: `Descripción ${id}`
+    });
+  },
+}
+```
+
+Ya podemos añadir proyectos cuando hacemos click. Este caso era fácil, porque toda la gestión del evento estaba en el mismo componente. Ahora vamos a darle funcionalidad al botón de eliminar.
+
+Dentro de nuestro componente *project* tenemos el botón, así que hacemos que gestione el evento de click:
+```html
+<span @click="onRemove"> <i class="fas fa-times"></i></span>
+```
+que ejecuta el método *onRemove*, que añadiremos en el componente, para que emita un evento hacia su padre:
+```javascript
+onRemove (event) {
+  this.$emit('remove', this.id)
+}
+```
+
+Ahora tenemos que hacer que el padre escuche el evento 'remove' y haga cosas. Hacemos que en el evento 'remove' ejecute el método también llamado remove (la @ indica el nombre del evento que escucha, y al otro lado del igual, el nombre del método a ejecutar).
+```html
+<project
+  v-for="(project, index) of filteredProjects"
+  :key="index"
+  :title="project.title"
+  :text="project.text"
+  :id="project.id"
+  @remove="remove"
+/>
+```
+
+Y añadimos el método
+```javascript
+methods: {
+  remove: function(id) {
+    this.projects = this.projects.filter(p => p.id != id);
+  },
+}
 ```
 
 ## Step 4
+
+Guay! Ya podemos añadir y eliminar proyectos. ¿Queremos editarlos? Vamos a ello.
+
 
 ``` javascript
   
