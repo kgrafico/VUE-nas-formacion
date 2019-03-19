@@ -8,6 +8,127 @@ Empezaremos super rápido gracias a Vue-CLI y veremos importantes aspectos de Vu
 
 Pero lo importante es que vosotros os ensuciéis las manos creando un par de vistas, haciendo componentes, pasando datos, y que completéis al máximo un mini proyecto que os pueda servir en un futuro, ya sea para haceros VUEjstro propio portfolio o para cuando os tengáis que enfrentar a Vue en un trabajo.
 
+
+click en >>>>
+
+Partimos de: https://codesandbox.io/embed/2x73mm087n
+
+>>>>>>>
+
+## Step 0.0
+En este paso podrás encontrar la aplicación sin VUE, observarás que hay tres archivos básicos: 
+
+	1. index.html
+	2. index.js
+	3. styles.css
+	
+Ahora podrás comprobar lo fácil que es integrar VUE en esta aplicación, haz click en el siguiente enlace que te llevará al codesanbox:
+
+Para instanciar VUE, vamos a añadir en index.html:
+
+``` javascript
+  <script src="https://unpkg.com/vue"></script>
+```
+
+index.js:
+
+``` javascript
+new Vue({
+	el: '#app'
+})
+```
+
+
+## Step 0.1
+
+https://codesandbox.io/s/25j4kwrwr
+
+``` javascript
+  
+
+```
+
+## Step 0.3
+
+``` javascript
+  
+
+```
+
+## Step 0.4
+
+``` javascript
+  
+
+```
+
+## Step 0.5
+
+``` javascript
+  
+
+```
+
+## Step 0
+https://github.com/karoldesign/VUE-nas-formacion/tree/step-0
+
+En este paso ya hemos 
+
+``` javascript
+  
+
+```
+
+## Step 1
+
+``` javascript
+  
+
+```
+
+## Step 2
+
+``` javascript
+  
+
+```
+
+## Step 3
+
+``` javascript
+  
+
+```
+
+## Step 4
+
+``` javascript
+  
+
+```
+
+## Step 5
+
+``` javascript
+  
+
+```
+
+## Step 6
+
+``` javascript
+  
+
+```
+
+## Step master
+
+``` javascript
+  
+
+```
+
+
 ## Build Setup
 
 ``` bash
