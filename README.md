@@ -251,42 +251,15 @@ methods: {
 
 ## Step 4
 
-Guay! Ya podemos añadir y eliminar proyectos. ¿Queremos editarlos? Vamos a ello.
+Guay! Ya podemos añadir y eliminar proyectos. ¿Queremos editarlos? Vamos a ello. Vamos a explicar qué queremos hacer y vosotros lo implementáis:
+
+Al hacer click en el botón editar (*@click*) 
+debemos hacer que se vean inputs (*v-bind*?)
+en lugar de los textos (*v-if*?), 
+para que el usuario pueda editarlos.
 
 
-``` javascript
-  
-
-```
-
-## Step 4
-
-``` javascript
-  
-
-```
-
-## Step 5
-
-``` javascript
-  
-
-```
-
-## Step 6
-
-``` javascript
-  
-
-```
-
-## Step master
-
-``` javascript
-  
-
-```
-
+# Para arrancar el proyecto
 
 ## Build Setup
 
