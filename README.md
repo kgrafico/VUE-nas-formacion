@@ -13,9 +13,14 @@ Para partir de una base, tenemos un diseño: https://invis.io/FAQUGIWU34C
 
 En el que iremos basando todo nuestro desarrollo...
 
+![alt text](https://github.com/karoldesign/VUE-nas-formacion/blob/master/static/img/design.png)
+
 
 
 ## Step 0.0
+
+![alt text](https://github.com/karoldesign/VUE-nas-formacion/blob/master/static/img/img1.png)
+
 En este paso podrás encontrar la aplicación sin VUE, observarás que hay tres archivos básicos: 
 
 	1. index.html
@@ -49,16 +54,27 @@ Con esto último, estamos instanciando Vue en el *el* (elemento) con id="app". Y
 
 ## Step 0.1
 
-
 Cuando instanciamos Vue, podemos indicarle así como indicamos el *el*emento donde se encuentra, los datos que tiene, en el elemento *data*.
 
 ``` javascript
 new Vue({
-  el: '#app',
+  el: "#app",
   data: {
-    logo: 'Mis Proyectos'
+    logo: "Mis proyectos",
+    projects: [
+      {
+        id: 1,
+        title: "PROYECTO 1",
+        text: "descripcion 1"
+      },
+      {
+        id: 2,
+        title: "PROYECTO 2",
+        text: "descripcion 2"
+      }
+    ]
   }
-})
+});
 ```
 
 Ahora en la variable "logo" tendremos esa cadena de texto que podemos referenciar desde el html, con la sintaxis del moustache {{ }}.
@@ -68,6 +84,26 @@ Ahora en la variable "logo" tendremos esa cadena de texto que podemos referencia
 ```
 
 Para hacer lo mismo con el proyecto que vemos, vamos a crear además un array *projects*, donde cada uno tiene un *title* y un *description*. Y duplicaremos el código que renderiza un proyecto, para que ahora muestre *{{projects[0].title}}* y así.
+
+Para pintar el segundo proyecto tenemos que copiar de nuevo el section y poner la posición 1 en el Array:
+
+``` javascript
+
+<section class="project">
+  <div class="image"></div>
+  <div class="textContent">
+    <div class="header-box">
+      <h4 class="title">{{projects[1].title}}</h4>
+      <div class="btns">
+        <span> <i class="fas fa-times"></i> </span>
+        <span> <i class="fas fa-pencil-alt"></i> </span>
+      </div>
+    </div>
+    <p class="text">{{projects[1].text}}</p>
+  </div>
+</section>
+
+```
 
 El resultado sería este: https://codesandbox.io/s/25j4kwrwr
 
@@ -110,6 +146,10 @@ showProjects: function() {
       <section class="project">
 ...
 ```
+
+El resultado sería: https://codesandbox.io/embed/1v8wxm0l57
+
+![alt text](https://github.com/karoldesign/VUE-nas-formacion/blob/master/static/img/img2.png)
 
 ## Step 1
 
