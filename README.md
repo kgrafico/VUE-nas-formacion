@@ -9,11 +9,11 @@ Empezaremos super rápido gracias a Vue-CLI y veremos importantes aspectos de Vu
 Pero lo importante es que vosotros os ensuciéis las manos creando un par de vistas, haciendo componentes, pasando datos, y que completéis al máximo un mini proyecto que os pueda servir en un futuro, ya sea para haceros VUEjstro propio portfolio o para cuando os tengáis que enfrentar a Vue en un trabajo.
 
 
-click en >>>>
+Para partir de una base, tenemos un diseño: https://invis.io/FAQUGIWU34C
 
-Partimos de: https://codesandbox.io/embed/2x73mm087n
+En el que iremos basando todo nuestro desarrollo...
 
->>>>>>>
+
 
 ## Step 0.0
 En este paso podrás encontrar la aplicación sin VUE, observarás que hay tres archivos básicos: 
@@ -23,6 +23,10 @@ En este paso podrás encontrar la aplicación sin VUE, observarás que hay tres 
 	3. styles.css
 	
 Ahora podrás comprobar lo fácil que es integrar VUE en esta aplicación, haz click en el siguiente enlace que te llevará al codesanbox:
+
+
+https://codesandbox.io/embed/2x73mm087n
+
 
 Para añadir VUE, tenemos que importar la librería de vue en nuestro html, y además decirle a Vue dónde queremos que se instancie:
 
@@ -34,8 +38,9 @@ index.js:
 
 ``` javascript
 new Vue({
-  el: '#app'
-})
+  el: "#app",
+  data: {}
+});
 ```
 
 Con esto último, estamos instanciando Vue en el *el* (elemento) con id="app". Y ya estaría. Vamos a ver cómo pasar datos desde nuestra instancia de Vue para que se muestren en el html.
@@ -44,7 +49,6 @@ Con esto último, estamos instanciando Vue en el *el* (elemento) con id="app". Y
 
 ## Step 0.1
 
-https://codesandbox.io/s/25j4kwrwr
 
 Cuando instanciamos Vue, podemos indicarle así como indicamos el *el*emento donde se encuentra, los datos que tiene, en el elemento *data*.
 
@@ -64,6 +68,8 @@ Ahora en la variable "logo" tendremos esa cadena de texto que podemos referencia
 ```
 
 Para hacer lo mismo con el proyecto que vemos, vamos a crear además un array *projects*, donde cada uno tiene un *title* y un *description*. Y duplicaremos el código que renderiza un proyecto, para que ahora muestre *{{projects[0].title}}* y así.
+
+El resultado sería este: https://codesandbox.io/s/25j4kwrwr
 
 ## Step 0.2
 
