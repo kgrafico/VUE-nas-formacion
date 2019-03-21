@@ -6,8 +6,8 @@
       <div class="header-box">
         <h4 class="title">{{ title }}</h4>
         <div class="btns">
-          <span @click="onRemove"> <i class="fas fa-times"></i></span>
           <span> <i class="fas fa-pencil-alt"></i></span>
+          <span @click="onRemove"> <i class="fas fa-times"></i></span>
         </div>
       </div>
       <p class="text">{{ text }}</p>
@@ -37,5 +37,3 @@
   }
 </script>
 
-<style scoped lang="scss">
-</style>
