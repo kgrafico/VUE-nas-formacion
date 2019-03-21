@@ -155,12 +155,15 @@ El resultado sería: https://codesandbox.io/embed/1v8wxm0l57
 
 Vemos que esto va creciendo considerablemente a medida que vamos metiendo variables y métodos para renderizar. En el mundo real, este caso puede servir para algo muy pequeño, pero lo que nos podemos encontrar es una aplicación completa que queremos desarrollar en Vue. Para ello vamos a hacer uso de un *cli* que iniciará una aplicación por nosotros, y podremos hacer muchas más cosas en ella.
 
-Lo primero, tener **npm** instalado.
-Después, instalar **vue-cli**. `npm install -g @vue/cli`.
+Lo primero, tener **npm** instalado, y después, instalar **vue-cli**. 
+
+`npm install -g @vue/cli`.
 
 Si quieres también puedes trabajar sobre nuestro repo de GitHub donde ya hemos hecho algunas cosas por ti :).
 https://github.com/karoldesign/VUE-nas-formacion/tree/step-2
-O si prefieres seguir en codesandbox, puedes partir de aquí con todo lo que llevamos hecho: https://codesandbox.io/s/ozzlp9j2z
+
+
+o si prefieres seguir en codesandbox, puedes partir de aquí con todo lo que llevamos hecho: https://codesandbox.io/s/jvnvm8v0k5
 
 Y si no, ahora vamos a trasladar todo lo que llevamos hecho a nuestra nueva y flamante aplicación.
 
