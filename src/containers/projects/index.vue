@@ -9,10 +9,10 @@
           <h4 class="title">Título</h4>
           <div class="btns">
             <span>
-              <i class="fas fa-times"></i>
+              <i class="fas fa-pencil-alt"></i>
             </span>
             <span>
-              <i class="fas fa-pencil-alt"></i>
+              <i class="fas fa-times"></i>
             </span>
           </div>
         </div>
