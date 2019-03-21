@@ -219,6 +219,8 @@ export default {
 }
 ```
 
+Resultado: https://codesandbox.io/s/m5owym2l49
+
 Y desde el padre ya podremos llamarlo, y pasarle props, con otra directiva, **v-bind**.
 ```html
 <project
@@ -240,7 +242,7 @@ También podemos hacer uso de la sintaxis que propone Vue para evitarnos escribi
   :id="project.id"
 />
 ```
-
+Resultado: https://codesandbox.io/s/m3y39kl8px
 
 ## Step 3
 
@@ -298,6 +300,8 @@ methods: {
   },
 }
 ```
+
+Resultado: https://codesandbox.io/s/zn29zm8vrx
 
 ## Step 4
 
