@@ -21,6 +21,10 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    &:focus {
+      outline: none;
+      background-color: #ebebef;
+    }
   }
 
   .border {
@@ -52,5 +56,14 @@
     color: grey;
     display: flex;
     margin: 0 auto;
+    &:active {
+      outline: none;
+      background-color: #9DB6EC;
+      color: white;
+      border: 1px solid white;
+    }
+    &:focus {
+      outline: none;
+    }
   }
 }
