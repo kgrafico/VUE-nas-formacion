@@ -4,11 +4,11 @@
     <h1>{{ logo }}</h1>
     <input class="search" type="text" v-model="inputText" placeholder="search...">
     <div v-if="showProjects">
-      <section class="project">
+      <section class="project" v-if="filteredProjects[0]">
         <div class="image"></div>
         <div class="textContent">
           <div class="header-box">
-            <h4 class="title">{{ projects[0].title }}</h4>
+            <h4 class="title">{{ filteredProjects[0].title }}</h4>
             <div class="btns">
               <span>
                 <i class="fas fa-times"></i>
@@ -18,14 +18,14 @@
               </span>
             </div>
           </div>
-          <p class="text">{{ projects[0].text }}</p>
+          <p class="text">{{ filteredProjects[0].text }}</p>
         </div>
       </section>
-      <section class="project">
+      <section class="project" v-if="filteredProjects[1]">
         <div class="image"></div>
         <div class="textContent">
           <div class="header-box">
-            <h4 class="title">{{ projects[1].title }}</h4>
+            <h4 class="title">{{ filteredProjects[1].title }}</h4>
             <div class="btns">
               <span>
                 <i class="fas fa-times"></i>
@@ -35,7 +35,7 @@
               </span>
             </div>
           </div>
-          <p class="text">{{ projects[1].text }}</p>
+          <p class="text">{{ filteredProjects[1].text }}</p>
         </div>
       </section>
     </div>
