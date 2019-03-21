@@ -14,7 +14,9 @@
       />
     </div>
     <div v-if="!showProjects">No projects found</div>
-    <button @click="add" class="addNewProject">Añadir proyecto</button>
+    <div class="boxAddButton">
+      <button @click="add" class="addNewProject">Añadir proyecto</button>
+    </div>
   </section>
 </template>
 

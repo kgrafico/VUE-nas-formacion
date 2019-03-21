@@ -46,24 +46,31 @@
     padding: 0;
   }
 
-  .addNewProject {
-    border: 1px solid grey;
-    border-radius: 5px;
-    background-color: white;
-    padding: 5px 15px 5px 15px;
-    font-size: 1em;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    color: grey;
+
+  .boxAddButton {
+    position: fixed;
     display: flex;
-    margin: 0 auto;
-    &:active {
-      outline: none;
-      background-color: #9DB6EC;
-      color: white;
-      border: 1px solid white;
-    }
-    &:focus {
-      outline: none;
+    width: 100%;
+    bottom: 84px;
+    .addNewProject {
+      border: 1px solid grey;
+      border-radius: 5px;
+      background-color: white;
+      padding: 5px 15px 5px 15px;
+      font-size: 1em;
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      color: grey;
+      display: flex;
+      margin: 0 auto;
+      &:active {
+        outline: none;
+        background-color: #9DB6EC;
+        color: white;
+        border: 1px solid white;
+      }
+      &:focus {
+        outline: none;
+      }
     }
   }
 }

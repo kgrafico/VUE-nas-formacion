@@ -7,8 +7,8 @@
         <h4 v-if="!editing" class="title">{{ title }}</h4>
         <input v-if="editing" v-model="title" class="title inputStyle">
         <div class="btns">
-          <span @click="onRemove"> <i class="fas fa-times"></i></span>
           <span @click="edit"> <i class="fas fa-pencil-alt"></i></span>
+          <span @click="onRemove"> <i class="fas fa-times"></i></span>
         </div>
       </div>
       <p v-if="!editing" class="text">{{ text }}</p>
