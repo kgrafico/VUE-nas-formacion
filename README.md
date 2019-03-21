@@ -30,7 +30,7 @@ En este paso podrás encontrar la aplicación sin VUE, observarás que hay tres 
 Ahora podrás comprobar lo fácil que es integrar VUE en esta aplicación, haz click en el siguiente enlace que te llevará al codesanbox:
 
 
-https://codesandbox.io/embed/2x73mm087n
+https://codesandbox.io/s/23nl747ly
 
 
 Para añadir VUE, tenemos que importar la librería de vue en nuestro html, y además decirle a Vue dónde queremos que se instancie:
