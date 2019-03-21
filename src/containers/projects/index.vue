@@ -11,10 +11,10 @@
             <h4 class="title">{{ filteredProjects[0].title }}</h4>
             <div class="btns">
               <span>
-                <i class="fas fa-times"></i>
+                <i class="fas fa-pencil-alt"></i>
               </span>
               <span>
-                <i class="fas fa-pencil-alt"></i>
+                <i class="fas fa-times"></i>
               </span>
             </div>
           </div>
@@ -28,10 +28,10 @@
             <h4 class="title">{{ filteredProjects[1].title }}</h4>
             <div class="btns">
               <span>
-                <i class="fas fa-times"></i>
+                <i class="fas fa-pencil-alt"></i>
               </span>
               <span>
-                <i class="fas fa-pencil-alt"></i>
+                <i class="fas fa-times"></i>
               </span>
             </div>
           </div>
