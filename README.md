@@ -77,7 +77,7 @@ new Vue({
 });
 ```
 
-Ahora en la variable "logo" tendremos esa cadena de texto que podemos referenciar desde el html, con la sintaxis del moustache {{ }}.
+Ahora en la variable "logo" tendremos esa cadena de texto que podemos referenciar desde el html, con la *sintaxis del moustache* **{{ }}**.
 
 ``` html
 <h1>{{ logo }}</h1>
@@ -308,9 +308,37 @@ Resultado: https://codesandbox.io/s/zn29zm8vrx
 Guay! Ya podemos añadir y eliminar proyectos. ¿Queremos editarlos? Vamos a ello. Vamos a explicar qué queremos hacer y vosotros lo implementáis:
 
 Al hacer click en el botón editar (*@click*) 
+
+```javascript
+
+<span @click="edit"> <i class="fas fa-pencil-alt"></i></span>
+
+```
 debemos hacer que se vean inputs (*v-bind*?)
 en lugar de los textos (*v-if*?), 
+
+```javascript
+
+<h4 v-if="!editing" class="title">{{ title }}</h4>
+<input v-if="editing" v-model="title" class="title inputStyle">
+
+```
+
+```javascript
+
+<p v-if="!editing" class="text">{{ text }}</p>
+<input v-if="editing" v-model="text" class="text inputStyle">
+
+```
 para que el usuario pueda editarlos.
+
+```javascript
+
+edit: function() {
+  this.editing = !this.editing;
+}
+
+```
 
 
 # Para arrancar el proyecto
