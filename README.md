@@ -160,10 +160,11 @@ Lo primero, tener **npm** instalado, y después, instalar **vue-cli**.
 `npm install -g @vue/cli`.
 
 Si quieres también puedes trabajar sobre nuestro repo de GitHub donde ya hemos hecho algunas cosas por ti :).
-https://github.com/karoldesign/VUE-nas-formacion/tree/step-2
+https://github.com/karoldesign/VUE-nas-formacion/tree/step-2-computed_and_v-if
 
 
-o si prefieres seguir en codesandbox, puedes partir de aquí con todo lo que llevamos hecho: https://codesandbox.io/s/jvnvm8v0k5
+o si prefieres seguir en codesandbox, puedes partir de aquí con todo lo que llevamos hecho: 
+https://codesandbox.io/s/ozzlp9j2z
 
 Y si no, ahora vamos a trasladar todo lo que llevamos hecho a nuestra nueva y flamante aplicación.
 
